@@ -1,5 +1,5 @@
-class calc{
-    public statiic void main(){
-        system.out.println("Hello World")
+public class calc{
+    public static void main(String[] args){
+        System.out.println("Hello World");
     }
 }
