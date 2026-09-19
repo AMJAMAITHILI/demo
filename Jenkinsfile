@@ -5,10 +5,13 @@ pipeline{
         stages{
             stage("Build"){
                 steps{
-                    bat "python3 src/calc.py"
+                    bat "javac src\\calc.java"
                 }
             }
-
+            stage("Run"){
+                steps{
+                    bat "java -cp src\\calc"
+                }
         }
-    
+        }
 }
